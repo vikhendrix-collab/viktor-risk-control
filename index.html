@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Viktor Risk Control</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Viktor Risk Control PRO</h1>
+
+  <div class="card">
+    <input type="number" id="capital" placeholder="Patrimônio Atual">
+    <input type="number" id="stopLoss" placeholder="% Stop Loss">
+    <input type="number" id="stopWin" placeholder="% Stop Win">
+    <input type="number" id="risk" placeholder="% Risco Base">
+    <input type="number" id="payout" placeholder="% Payout">
+    <button onclick="calcular()">Calcular</button>
+  </div>
+
+  <div class="card">
+    <h2>Resultados</h2>
+    <p id="loss"></p>
+    <p id="win"></p>
+    <p id="entry1"></p>
+    <p id="mg1"></p>
+    <p id="mg2"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
